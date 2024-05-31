@@ -1,0 +1,13 @@
+[workspace]
+[package]
+version = "0.1.0"
+name = "sp1-muliproof-challenge-program"
+edition = "2021"
+
+[dependencies]
+sp1-zkvm = { git = "https://github.com/succinctlabs/sp1.git", rev = "v1.0.0-testnet"  }
+tiny-keccak = { version = "2.0.2", features = ["sha3"] }
+
+
+[patch.crates-io]
+tiny-keccak = { git = "https://github.com/sp1-patches/tiny-keccak", branch = "patch-v2.0.2" }

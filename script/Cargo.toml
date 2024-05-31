@@ -1,0 +1,13 @@
+[workspace]
+[package]
+version = "0.1.0"
+name = "sp1-muliproof-challenge-script"
+edition = "2021"
+
+[dependencies]
+rand = "0.8.5"
+sp1-sdk = { git = "https://github.com/succinctlabs/sp1.git", rev = "v1.0.0-testnet" }
+tiny-keccak = { version = "2.0.2", features = ["sha3"] }
+
+[build-dependencies]
+sp1-helper = { git = "https://github.com/succinctlabs/sp1.git", rev = "v1.0.0-testnet"  }
